@@ -3,3 +3,6 @@
 *.json text eol=lf
 *.py text eol=lf
 *.csv text eol=lf
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.joblib filter=lfs diff=lfs merge=lfs -text
+*.save filter=lfs diff=lfs merge=lfs -text
