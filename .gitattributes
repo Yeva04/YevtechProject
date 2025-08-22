@@ -1,0 +1,5 @@
+# Ensure Jupyter notebooks and JSON files use LF line endings
+*.ipynb text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.csv text eol=lf
