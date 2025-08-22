@@ -1,0 +1,40 @@
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+venv/
+tfenv/
+*.bak
+
+# VS Code
+.vscode/
+
+# Environment files
+.env
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Large binary files and models
+*.h5
+*.joblib
+*.save
+tensorflow-2.12.0-cp310-cp310-win_amd64.whl
+tensorflow-2.12.0-cp310-cp310-win_amd64_files/
+
+# Temporary and Office files
+~*.docx
+~*.tmp
+*.docx
+
+# Miscellaneous
+instance/
+migrations/
+mobile_unused/
+export/
+flask/

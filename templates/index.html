@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome- SAPPS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #060000;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #2563eb;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        a {
+            color: #4682b4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #4682b4;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #2563eb;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Academic Performance Predictor 🎓</h1>
+        <p>
+            This application is designed to help students and administrators predict academic performance based on various factors such as attendance, scores, study habits, and more. 
+            Using advanced machine learning models, we provide insights into your performance and offer personalized recommendations to help you succeed.
+        </p>
+        <h3>How It Works</h3>
+        <ol>
+            <li>Select your role: Choose whether you are a student or an admin.</li>
+            <li>Log in or register: Use your credentials to access your dashboard.</li>
+            <li>Make predictions: Input your academic data to predict performance.</li>
+            <li>View results: See your prediction results and get personalized advice.</li>
+        </ol>
+        <a href="{{ url_for('role_selection') }}" class="btn">Get Started</a>
+    </div>
+</body>
+</html>

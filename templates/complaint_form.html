@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Complaint</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            color: #4682b4;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4682b4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5a9bd4;
+        }
+        .message {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .success {
+            background-color: #e0ffe0;
+            color: #2ecc71;
+        }
+        .error {
+            background-color: #ffe6e6;
+            color: #e74c3c;
+        }
+        a {
+            color: #4682b4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>📩 Submit a Complaint</h2>
+        <form method="POST">
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number" required>
+
+            <label for="complaint_text">Complaint:</label>
+            <textarea id="complaint_text" name="complaint_text" rows="5" required></textarea>
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="message {{ category }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p style="text-align: center;">
+            <a href="{{ url_for('student_dashboard') }}">Back to Dashboard</a>
+        </p>
+    </div>
+</body>
+</html>

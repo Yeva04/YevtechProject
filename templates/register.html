@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            color: #4682b4;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4682b4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5a9bd4;
+        }
+        .message {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .success {
+            background-color: #e0ffe0;
+            color: #2ecc71;
+        }
+        .error {
+            background-color: #ffe6e6;
+            color: #e74c3c;
+        }
+        a {
+            color: #4682b4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>📝 Register</h2>
+        <form method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="identifier">
+                {% if role == 'admin' %}
+                    Admin ID:
+                {% else %}
+                    Student ID:
+                {% endif %}
+            </label>
+            <input type="text" id="identifier" name="identifier" placeholder="Admin ID/Student ID" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="security_question">Security Question:</label>
+            <select id="security_question" name="security_question" required>
+                <option value="What is your favorite color?">What is your favorite color?</option>
+                <option value="What is your pet's name?">What is your pet's name?</option>
+                <option value="What is your best subject?">What is your best subject?</option>
+            </select>
+
+            <label for="security_answer">Security Answer:</label>
+            <input type="text" id="security_answer" name="security_answer" required>
+
+            {% if role == 'student' %}
+                <label for="parent_guardian_names">Parent/Guardian Names:</label>
+                <input type="text" id="parent_guardian_names" name="parent_guardian_names" required>
+
+                <label for="parent_guardian_contacts">Parent/Guardian Contacts:</label>
+                <input type="text" id="parent_guardian_contacts" name="parent_guardian_contacts" required>
+
+                <label for="home_address">Home Address:</label>
+                <input type="text" id="home_address" name="home_address" required>
+
+                <label for="student_age">Student Age:</label>
+                <input type="number" id="student_age" name="student_age" min="10" max="30" required>
+            {% endif %}
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="message {{ category }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p style="text-align: center;">
+            <a href="{{ url_for('forgot_password') }}">Forgot Password?</a> | 
+            <a href="{{ url_for('role_selection') }}">Role Selection</a> |
+            <a href="{{ url_for('index') }}">Back to Home</a>
+        </p>
+    </div>
+</body>
+</html>

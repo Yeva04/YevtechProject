@@ -1,0 +1,396 @@
+attendance_rate,assignment_score,quiz_score,exam_score,study_hours,feedback,performance_label
+94,30,25,30,3.5,Needs to attend more classes and study regularly.,Poor
+96,25,25,30,3.5,Needs to attend more classes and study regularly.,Poor
+90,40,35,50,3.5,Needs to attend more classes and study regularly.,Poor
+98,70,75,75,7.5,Good effort but needs improvement in consistency.,Average
+96,50,30,50,3.5,Needs to attend more classes and study regularly.,Poor
+90,75,75,75,3.5,Good effort but needs improvement in consistency.,Average
+100,60,60,55,3.5,Good effort but needs improvement in consistency.,Average
+94,25,30,30,3.5,Needs to attend more classes and study regularly.,Poor
+100,90,80,95,3.5,"Excellent performance, keep it up!",Excellent
+100,75,70,75,3.5,Good effort but needs improvement in consistency.,Average
+100,40,50,45,3.5,Needs to attend more classes and study regularly.,Poor
+96,60,50,60,7.5,Good effort but needs improvement in consistency.,Average
+98,70,70,70,1.0,Good effort but needs improvement in consistency.,Average
+98,50,50,55,3.5,Good effort but needs improvement in consistency.,Average
+100,80,70,80,7.5,"Excellent performance, keep it up!",Excellent
+96,70,70,70,1.0,Good effort but needs improvement in consistency.,Average
+94,70,65,70,7.5,Good effort but needs improvement in consistency.,Average
+96,50,40,50,3.5,Needs to attend more classes and study regularly.,Poor
+84,25,30,25,1.0,Needs to attend more classes and study regularly.,Poor
+96,50,40,50,1.0,Needs to attend more classes and study regularly.,Poor
+100,70,65,75,3.5,Good effort but needs improvement in consistency.,Average
+100,75,60,75,1.0,Good effort but needs improvement in consistency.,Average
+98,75,75,80,3.5,"Excellent performance, keep it up!",Excellent
+100,65,65,60,3.5,Good effort but needs improvement in consistency.,Average
+98,45,50,40,7.5,Needs to attend more classes and study regularly.,Poor
+86,45,30,40,1.0,Needs to attend more classes and study regularly.,Poor
+98,60,60,55,1.0,Good effort but needs improvement in consistency.,Average
+96,80,75,75,1.0,Good effort but needs improvement in consistency.,Average
+96,55,55,55,3.5,Good effort but needs improvement in consistency.,Average
+84,60,50,55,3.5,Good effort but needs improvement in consistency.,Average
+100,55,45,60,3.5,Good effort but needs improvement in consistency.,Average
+100,80,85,85,3.5,"Excellent performance, keep it up!",Excellent
+100,80,85,80,3.5,"Excellent performance, keep it up!",Excellent
+100,50,40,60,3.5,Good effort but needs improvement in consistency.,Average
+100,70,60,75,1.0,Good effort but needs improvement in consistency.,Average
+100,35,40,30,1.0,Needs to attend more classes and study regularly.,Poor
+98,80,75,90,7.5,"Excellent performance, keep it up!",Excellent
+93,80,75,75,7.5,Good effort but needs improvement in consistency.,Average
+98,60,60,55,7.5,Good effort but needs improvement in consistency.,Average
+92,65,70,65,1.0,Good effort but needs improvement in consistency.,Average
+75,50,35,55,3.5,Good effort but needs improvement in consistency.,Average
+92,60,60,60,1.0,Good effort but needs improvement in consistency.,Average
+98,90,95,90,3.5,"Excellent performance, keep it up!",Excellent
+100,40,40,55,1.0,Good effort but needs improvement in consistency.,Average
+86,50,50,45,3.5,Needs to attend more classes and study regularly.,Poor
+92,40,40,30,3.5,Needs to attend more classes and study regularly.,Poor
+88,60,55,55,3.5,Good effort but needs improvement in consistency.,Average
+96,95,95,100,12.0,"Excellent performance, keep it up!",Excellent
+98,75,75,70,3.5,Good effort but needs improvement in consistency.,Average
+98,35,35,35,3.5,Needs to attend more classes and study regularly.,Poor
+98,65,60,65,3.5,Good effort but needs improvement in consistency.,Average
+98,65,55,65,3.5,Good effort but needs improvement in consistency.,Average
+94,55,55,50,1.0,Needs to attend more classes and study regularly.,Poor
+100,50,40,55,1.0,Good effort but needs improvement in consistency.,Average
+94,65,50,65,1.0,Good effort but needs improvement in consistency.,Average
+92,45,40,50,3.5,Needs to attend more classes and study regularly.,Poor
+100,75,70,75,3.5,Good effort but needs improvement in consistency.,Average
+96,75,70,75,3.5,Good effort but needs improvement in consistency.,Average
+98,50,45,45,3.5,Needs to attend more classes and study regularly.,Poor
+98,80,75,80,3.5,"Excellent performance, keep it up!",Excellent
+94,55,50,55,3.5,Good effort but needs improvement in consistency.,Average
+94,40,50,55,1.0,Good effort but needs improvement in consistency.,Average
+96,50,40,45,3.5,Needs to attend more classes and study regularly.,Poor
+98,45,50,45,7.5,Needs to attend more classes and study regularly.,Poor
+100,50,50,50,3.5,Needs to attend more classes and study regularly.,Poor
+98,75,80,75,3.5,Good effort but needs improvement in consistency.,Average
+96,65,65,60,12.0,Good effort but needs improvement in consistency.,Average
+96,35,35,30,12.0,Needs to attend more classes and study regularly.,Poor
+98,45,40,40,3.5,Needs to attend more classes and study regularly.,Poor
+88,80,80,80,12.0,"Excellent performance, keep it up!",Excellent
+100,75,65,75,12.0,Good effort but needs improvement in consistency.,Average
+100,50,50,50,12.0,Needs to attend more classes and study regularly.,Poor
+98,30,40,25,3.5,Needs to attend more classes and study regularly.,Poor
+98,60,60,70,1.0,Good effort but needs improvement in consistency.,Average
+46,60,55,55,3.5,Good effort but needs improvement in consistency.,Average
+94,45,45,50,3.5,Needs to attend more classes and study regularly.,Poor
+92,55,55,50,12.0,Needs to attend more classes and study regularly.,Poor
+100,55,55,55,12.0,Good effort but needs improvement in consistency.,Average
+98,40,40,50,1.0,Needs to attend more classes and study regularly.,Poor
+88,25,25,25,3.5,Needs to attend more classes and study regularly.,Poor
+98,60,50,60,1.0,Good effort but needs improvement in consistency.,Average
+96,50,55,55,7.5,Good effort but needs improvement in consistency.,Average
+90,30,35,30,3.5,Needs to attend more classes and study regularly.,Poor
+96,75,75,75,3.5,Good effort but needs improvement in consistency.,Average
+98,50,45,50,3.5,Needs to attend more classes and study regularly.,Poor
+94,45,35,40,3.5,Needs to attend more classes and study regularly.,Poor
+96,35,40,30,3.5,Needs to attend more classes and study regularly.,Poor
+96,70,65,70,7.5,Good effort but needs improvement in consistency.,Average
+88,50,55,50,3.5,Needs to attend more classes and study regularly.,Poor
+82,30,40,35,3.5,Needs to attend more classes and study regularly.,Poor
+100,35,35,40,7.5,Needs to attend more classes and study regularly.,Poor
+96,85,80,90,1.0,"Excellent performance, keep it up!",Excellent
+96,30,35,30,3.5,Needs to attend more classes and study regularly.,Poor
+100,50,55,50,3.5,Needs to attend more classes and study regularly.,Poor
+94,65,55,70,12.0,Good effort but needs improvement in consistency.,Average
+98,50,35,50,12.0,Needs to attend more classes and study regularly.,Poor
+98,75,55,75,1.0,Good effort but needs improvement in consistency.,Average
+98,45,40,50,3.5,Needs to attend more classes and study regularly.,Poor
+94,70,55,70,1.0,Good effort but needs improvement in consistency.,Average
+100,45,35,40,7.5,Needs to attend more classes and study regularly.,Poor
+86,35,35,25,1.0,Needs to attend more classes and study regularly.,Poor
+100,85,80,85,7.5,"Excellent performance, keep it up!",Excellent
+96,65,50,70,1.0,Good effort but needs improvement in consistency.,Average
+74,30,35,30,3.5,Needs to attend more classes and study regularly.,Poor
+100,90,80,90,3.5,"Excellent performance, keep it up!",Excellent
+90,55,50,55,12.0,Good effort but needs improvement in consistency.,Average
+92,40,35,40,12.0,Needs to attend more classes and study regularly.,Poor
+98,90,80,90,7.5,"Excellent performance, keep it up!",Excellent
+94,65,50,65,12.0,Good effort but needs improvement in consistency.,Average
+96,75,70,80,7.5,"Excellent performance, keep it up!",Excellent
+94,95,90,95,1.0,"Excellent performance, keep it up!",Excellent
+100,50,35,50,7.5,Needs to attend more classes and study regularly.,Poor
+94,65,50,65,3.5,Good effort but needs improvement in consistency.,Average
+90,95,90,95,1.0,"Excellent performance, keep it up!",Excellent
+92,45,45,45,3.5,Needs to attend more classes and study regularly.,Poor
+98,75,75,80,3.5,"Excellent performance, keep it up!",Excellent
+98,65,55,70,3.5,Good effort but needs improvement in consistency.,Average
+100,70,65,65,1.0,Good effort but needs improvement in consistency.,Average
+80,35,45,40,3.5,Needs to attend more classes and study regularly.,Poor
+94,65,70,65,1.0,Good effort but needs improvement in consistency.,Average
+98,75,80,75,3.5,Good effort but needs improvement in consistency.,Average
+94,70,80,75,12.0,Good effort but needs improvement in consistency.,Average
+98,65,65,65,3.5,Good effort but needs improvement in consistency.,Average
+82,55,70,65,1.0,Good effort but needs improvement in consistency.,Average
+100,35,40,40,3.5,Needs to attend more classes and study regularly.,Poor
+100,65,65,60,1.0,Good effort but needs improvement in consistency.,Average
+100,50,35,55,3.5,Good effort but needs improvement in consistency.,Average
+98,40,35,45,3.5,Needs to attend more classes and study regularly.,Poor
+100,20,35,0,1.0,Needs to attend more classes and study regularly.,Poor
+92,90,90,90,1.0,"Excellent performance, keep it up!",Excellent
+100,0,60,0,7.5,Needs to attend more classes and study regularly.,Poor
+100,0,40,0,1.0,Needs to attend more classes and study regularly.,Poor
+88,65,50,60,1.0,Good effort but needs improvement in consistency.,Average
+84,55,60,55,1.0,Good effort but needs improvement in consistency.,Average
+100,0,45,0,3.5,Needs to attend more classes and study regularly.,Poor
+100,0,55,0,7.5,Needs to attend more classes and study regularly.,Poor
+100,0,50,0,3.5,Needs to attend more classes and study regularly.,Poor
+100,0,20,0,1.0,Needs to attend more classes and study regularly.,Poor
+100,60,70,60,3.5,Good effort but needs improvement in consistency.,Average
+100,80,80,75,1.0,Good effort but needs improvement in consistency.,Average
+100,45,35,0,12.0,Needs to attend more classes and study regularly.,Poor
+92,45,45,45,1.0,Needs to attend more classes and study regularly.,Poor
+98,55,45,55,7.5,Good effort but needs improvement in consistency.,Average
+98,70,70,65,1.0,Good effort but needs improvement in consistency.,Average
+100,0,25,0,1.0,Needs to attend more classes and study regularly.,Poor
+100,55,40,55,3.5,Good effort but needs improvement in consistency.,Average
+100,35,30,0,3.5,Needs to attend more classes and study regularly.,Poor
+98,55,50,55,3.5,Good effort but needs improvement in consistency.,Average
+100,30,35,0,1.0,Needs to attend more classes and study regularly.,Poor
+100,45,40,50,1.0,Needs to attend more classes and study regularly.,Poor
+100,25,30,0,1.0,Needs to attend more classes and study regularly.,Poor
+94,65,60,70,1.0,Good effort but needs improvement in consistency.,Average
+92,50,50,50,7.5,Needs to attend more classes and study regularly.,Poor
+100,0,25,0,1.0,Needs to attend more classes and study regularly.,Poor
+100,55,55,60,1.0,Good effort but needs improvement in consistency.,Average
+98,40,55,40,3.5,Needs to attend more classes and study regularly.,Poor
+92,60,80,65,1.0,Good effort but needs improvement in consistency.,Average
+94,40,45,50,1.0,Needs to attend more classes and study regularly.,Poor
+98,75,85,75,1.0,Good effort but needs improvement in consistency.,Average
+96,60,50,60,3.5,Good effort but needs improvement in consistency.,Average
+100,30,35,0,1.0,Needs to attend more classes and study regularly.,Poor
+94,45,25,35,3.5,Needs to attend more classes and study regularly.,Poor
+100,0,35,0,1.0,Needs to attend more classes and study regularly.,Poor
+98,50,50,50,1.0,Needs to attend more classes and study regularly.,Poor
+100,40,25,35,3.5,Needs to attend more classes and study regularly.,Poor
+84,55,60,60,1.0,Good effort but needs improvement in consistency.,Average
+96,50,50,50,3.5,Needs to attend more classes and study regularly.,Poor
+100,75,70,80,3.5,"Excellent performance, keep it up!",Excellent
+100,35,30,0,3.5,Needs to attend more classes and study regularly.,Poor
+100,70,70,70,3.5,Good effort but needs improvement in consistency.,Average
+100,25,30,0,1.0,Needs to attend more classes and study regularly.,Poor
+98,75,65,80,3.5,"Excellent performance, keep it up!",Excellent
+100,55,65,50,3.5,Needs to attend more classes and study regularly.,Poor
+100,35,40,0,3.5,Needs to attend more classes and study regularly.,Poor
+96,55,50,45,3.5,Needs to attend more classes and study regularly.,Poor
+96,45,50,45,3.5,Needs to attend more classes and study regularly.,Poor
+98,65,65,55,3.5,Good effort but needs improvement in consistency.,Average
+96,25,30,30,3.5,Needs to attend more classes and study regularly.,Poor
+90,40,50,45,1.0,Needs to attend more classes and study regularly.,Poor
+96,50,50,55,3.5,Good effort but needs improvement in consistency.,Average
+90,40,45,40,3.5,Needs to attend more classes and study regularly.,Poor
+98,65,60,60,3.5,Good effort but needs improvement in consistency.,Average
+100,85,80,85,3.5,"Excellent performance, keep it up!",Excellent
+44,45,45,40,3.5,Needs to attend more classes and study regularly.,Poor
+86,65,60,60,3.5,Good effort but needs improvement in consistency.,Average
+88,60,60,55,3.5,Good effort but needs improvement in consistency.,Average
+98,60,55,55,1.0,Good effort but needs improvement in consistency.,Average
+100,75,75,75,3.5,Good effort but needs improvement in consistency.,Average
+94,35,40,45,3.5,Needs to attend more classes and study regularly.,Poor
+96,45,40,50,3.5,Needs to attend more classes and study regularly.,Poor
+90,60,55,65,3.5,Good effort but needs improvement in consistency.,Average
+100,40,40,45,3.5,Needs to attend more classes and study regularly.,Poor
+88,40,35,40,3.5,Needs to attend more classes and study regularly.,Poor
+92,45,40,50,1.0,Needs to attend more classes and study regularly.,Poor
+100,70,65,70,1.0,Good effort but needs improvement in consistency.,Average
+100,75,70,75,3.5,Good effort but needs improvement in consistency.,Average
+96,75,85,80,1.0,"Excellent performance, keep it up!",Excellent
+92,45,45,50,1.0,Needs to attend more classes and study regularly.,Poor
+76,90,90,90,1.0,"Excellent performance, keep it up!",Excellent
+100,45,45,50,3.5,Needs to attend more classes and study regularly.,Poor
+98,80,80,80,3.5,"Excellent performance, keep it up!",Excellent
+94,50,40,50,3.5,Needs to attend more classes and study regularly.,Poor
+96,45,45,50,3.5,Needs to attend more classes and study regularly.,Poor
+82,30,35,30,1.0,Needs to attend more classes and study regularly.,Poor
+94,50,50,55,12.0,Good effort but needs improvement in consistency.,Average
+72,45,50,45,7.5,Needs to attend more classes and study regularly.,Poor
+95,35,35,35,3.5,Needs to attend more classes and study regularly.,Poor
+90,60,55,65,3.5,Good effort but needs improvement in consistency.,Average
+94,45,45,50,1.0,Needs to attend more classes and study regularly.,Poor
+94,35,35,35,7.5,Needs to attend more classes and study regularly.,Poor
+90,40,40,40,12.0,Needs to attend more classes and study regularly.,Poor
+87,60,60,65,3.5,Good effort but needs improvement in consistency.,Average
+100,65,60,70,3.5,Good effort but needs improvement in consistency.,Average
+85,35,30,40,3.5,Needs to attend more classes and study regularly.,Poor
+88,50,40,50,1.0,Needs to attend more classes and study regularly.,Poor
+98,75,70,75,3.5,Good effort but needs improvement in consistency.,Average
+78,30,30,20,3.5,Needs to attend more classes and study regularly.,Poor
+87,30,30,40,3.5,Needs to attend more classes and study regularly.,Poor
+97,35,35,40,1.0,Needs to attend more classes and study regularly.,Poor
+96,50,45,50,7.5,Needs to attend more classes and study regularly.,Poor
+98,30,30,30,3.5,Needs to attend more classes and study regularly.,Poor
+100,25,30,0,7.5,Needs to attend more classes and study regularly.,Poor
+98,80,80,85,3.5,"Excellent performance, keep it up!",Excellent
+100,65,60,65,3.5,Good effort but needs improvement in consistency.,Average
+100,65,65,70,7.5,Good effort but needs improvement in consistency.,Average
+84,40,45,35,3.5,Needs to attend more classes and study regularly.,Poor
+90,75,80,75,3.5,Good effort but needs improvement in consistency.,Average
+98,55,60,60,3.5,Good effort but needs improvement in consistency.,Average
+86,40,50,45,3.5,Needs to attend more classes and study regularly.,Poor
+90,50,60,60,7.5,Good effort but needs improvement in consistency.,Average
+86,65,65,70,3.5,Good effort but needs improvement in consistency.,Average
+96,55,55,55,3.5,Good effort but needs improvement in consistency.,Average
+86,45,55,45,3.5,Needs to attend more classes and study regularly.,Poor
+98,65,70,65,3.5,Good effort but needs improvement in consistency.,Average
+82,35,45,30,3.5,Needs to attend more classes and study regularly.,Poor
+90,45,55,50,7.5,Needs to attend more classes and study regularly.,Poor
+96,65,70,65,3.5,Good effort but needs improvement in consistency.,Average
+80,60,65,60,1.0,Good effort but needs improvement in consistency.,Average
+98,55,65,55,3.5,Good effort but needs improvement in consistency.,Average
+100,35,35,0,3.5,Needs to attend more classes and study regularly.,Poor
+86,60,60,60,3.5,Good effort but needs improvement in consistency.,Average
+98,55,50,60,3.5,Good effort but needs improvement in consistency.,Average
+100,0,30,0,1.0,Needs to attend more classes and study regularly.,Poor
+100,60,65,60,1.0,Good effort but needs improvement in consistency.,Average
+100,0,35,0,7.5,Needs to attend more classes and study regularly.,Poor
+94,90,90,90,1.0,"Excellent performance, keep it up!",Excellent
+96,60,60,65,1.0,Good effort but needs improvement in consistency.,Average
+84,40,30,40,1.0,Needs to attend more classes and study regularly.,Poor
+92,25,15,25,3.5,Needs to attend more classes and study regularly.,Poor
+100,75,65,75,1.0,Good effort but needs improvement in consistency.,Average
+100,40,30,40,1.0,Needs to attend more classes and study regularly.,Poor
+94,50,35,50,3.5,Needs to attend more classes and study regularly.,Poor
+96,45,30,40,1.0,Needs to attend more classes and study regularly.,Poor
+100,45,40,40,1.0,Needs to attend more classes and study regularly.,Poor
+100,60,40,60,1.0,Good effort but needs improvement in consistency.,Average
+98,45,35,40,1.0,Needs to attend more classes and study regularly.,Poor
+94,60,70,65,12.0,Good effort but needs improvement in consistency.,Average
+88,55,55,55,3.5,Good effort but needs improvement in consistency.,Average
+92,70,75,70,3.5,Good effort but needs improvement in consistency.,Average
+100,45,50,0,12.0,Needs to attend more classes and study regularly.,Poor
+79,90,85,90,3.5,"Excellent performance, keep it up!",Excellent
+98,40,40,40,3.5,Needs to attend more classes and study regularly.,Poor
+99,60,65,60,7.5,Good effort but needs improvement in consistency.,Average
+96,45,50,45,7.5,Needs to attend more classes and study regularly.,Poor
+100,50,45,0,7.5,Needs to attend more classes and study regularly.,Poor
+87,85,85,85,3.5,"Excellent performance, keep it up!",Excellent
+98,45,45,50,3.5,Needs to attend more classes and study regularly.,Poor
+92,50,60,55,3.5,Good effort but needs improvement in consistency.,Average
+90,45,50,50,3.5,Needs to attend more classes and study regularly.,Poor
+100,0,30,0,3.5,Needs to attend more classes and study regularly.,Poor
+85,45,45,45,3.5,Needs to attend more classes and study regularly.,Poor
+96,70,75,70,12.0,Good effort but needs improvement in consistency.,Average
+98,55,55,55,3.5,Good effort but needs improvement in consistency.,Average
+98,70,75,70,3.5,Good effort but needs improvement in consistency.,Average
+98,50,50,50,3.5,Needs to attend more classes and study regularly.,Poor
+94,60,60,60,3.5,Good effort but needs improvement in consistency.,Average
+25,45,50,45,3.5,Needs to attend more classes and study regularly.,Poor
+78,45,45,45,1.0,Needs to attend more classes and study regularly.,Poor
+85,40,45,40,3.5,Needs to attend more classes and study regularly.,Poor
+92,55,50,50,1.0,Needs to attend more classes and study regularly.,Poor
+70,40,40,40,1.0,Needs to attend more classes and study regularly.,Poor
+81,45,55,50,1.0,Needs to attend more classes and study regularly.,Poor
+99,60,60,60,12.0,Good effort but needs improvement in consistency.,Average
+96,45,40,50,3.5,Needs to attend more classes and study regularly.,Poor
+96,45,50,55,3.5,Good effort but needs improvement in consistency.,Average
+98,50,60,55,3.5,Good effort but needs improvement in consistency.,Average
+95,90,90,95,7.5,"Excellent performance, keep it up!",Excellent
+94,60,65,60,7.5,Good effort but needs improvement in consistency.,Average
+94,70,75,70,7.5,Good effort but needs improvement in consistency.,Average
+91,65,75,75,3.5,Good effort but needs improvement in consistency.,Average
+89,55,60,55,3.5,Good effort but needs improvement in consistency.,Average
+100,75,75,75,7.5,Good effort but needs improvement in consistency.,Average
+88,60,60,65,3.5,Good effort but needs improvement in consistency.,Average
+94,90,90,90,12.0,"Excellent performance, keep it up!",Excellent
+92,65,70,70,7.5,Good effort but needs improvement in consistency.,Average
+96,60,70,55,1.0,Good effort but needs improvement in consistency.,Average
+100,45,50,0,3.5,Needs to attend more classes and study regularly.,Poor
+90,40,50,40,3.5,Needs to attend more classes and study regularly.,Poor
+100,65,70,70,12.0,Good effort but needs improvement in consistency.,Average
+95,75,80,80,1.0,"Excellent performance, keep it up!",Excellent
+86,50,60,55,3.5,Good effort but needs improvement in consistency.,Average
+100,55,55,50,1.0,Needs to attend more classes and study regularly.,Poor
+100,60,75,70,7.5,Good effort but needs improvement in consistency.,Average
+100,85,85,90,12.0,"Excellent performance, keep it up!",Excellent
+80,70,75,65,3.5,Good effort but needs improvement in consistency.,Average
+92,60,70,60,3.5,Good effort but needs improvement in consistency.,Average
+100,90,85,90,1.0,"Excellent performance, keep it up!",Excellent
+62,45,40,40,1.0,Needs to attend more classes and study regularly.,Poor
+100,60,75,60,3.5,Good effort but needs improvement in consistency.,Average
+82,50,60,50,3.5,Needs to attend more classes and study regularly.,Poor
+100,45,45,0,3.5,Needs to attend more classes and study regularly.,Poor
+80,60,70,65,3.5,Good effort but needs improvement in consistency.,Average
+97,55,65,55,3.5,Good effort but needs improvement in consistency.,Average
+78,50,65,55,3.5,Good effort but needs improvement in consistency.,Average
+86,65,75,65,7.5,Good effort but needs improvement in consistency.,Average
+60,55,65,55,7.5,Good effort but needs improvement in consistency.,Average
+100,40,40,0,3.5,Needs to attend more classes and study regularly.,Poor
+91,50,45,45,7.5,Needs to attend more classes and study regularly.,Poor
+100,55,55,50,7.5,Needs to attend more classes and study regularly.,Poor
+98,55,55,55,3.5,Good effort but needs improvement in consistency.,Average
+77,65,65,65,3.5,Good effort but needs improvement in consistency.,Average
+88,45,55,45,3.5,Needs to attend more classes and study regularly.,Poor
+97,55,55,55,7.5,Good effort but needs improvement in consistency.,Average
+99,70,60,75,7.5,Good effort but needs improvement in consistency.,Average
+100,75,80,75,7.5,Good effort but needs improvement in consistency.,Average
+97,60,45,55,7.5,Good effort but needs improvement in consistency.,Average
+97,75,70,80,1.0,"Excellent performance, keep it up!",Excellent
+92,50,55,50,1.0,Needs to attend more classes and study regularly.,Poor
+93,45,50,45,7.5,Needs to attend more classes and study regularly.,Poor
+96,70,70,70,7.5,Good effort but needs improvement in consistency.,Average
+98,40,45,40,12.0,Needs to attend more classes and study regularly.,Poor
+93,70,60,70,7.5,Good effort but needs improvement in consistency.,Average
+100,0,35,0,3.5,Needs to attend more classes and study regularly.,Poor
+100,40,40,0,3.5,Needs to attend more classes and study regularly.,Poor
+100,45,50,0,12.0,Needs to attend more classes and study regularly.,Poor
+84,75,80,75,7.5,Good effort but needs improvement in consistency.,Average
+88,65,70,65,7.5,Good effort but needs improvement in consistency.,Average
+100,40,35,0,3.5,Needs to attend more classes and study regularly.,Poor
+93,75,80,85,12.0,"Excellent performance, keep it up!",Excellent
+96,50,45,50,3.5,Needs to attend more classes and study regularly.,Poor
+96,60,55,55,7.5,Good effort but needs improvement in consistency.,Average
+100,50,50,0,3.5,Needs to attend more classes and study regularly.,Poor
+89,75,80,75,3.5,Good effort but needs improvement in consistency.,Average
+100,40,45,0,3.5,Needs to attend more classes and study regularly.,Poor
+96,50,55,50,7.5,Needs to attend more classes and study regularly.,Poor
+93,65,65,70,7.5,Good effort but needs improvement in consistency.,Average
+91,75,80,80,7.5,"Excellent performance, keep it up!",Excellent
+100,50,50,45,7.5,Needs to attend more classes and study regularly.,Poor
+100,75,65,75,7.5,Good effort but needs improvement in consistency.,Average
+90,65,55,65,1.0,Good effort but needs improvement in consistency.,Average
+92,35,40,40,3.5,Needs to attend more classes and study regularly.,Poor
+98,65,65,65,3.5,Good effort but needs improvement in consistency.,Average
+93,35,40,40,1.0,Needs to attend more classes and study regularly.,Poor
+96,40,40,40,1.0,Needs to attend more classes and study regularly.,Poor
+96,55,65,55,3.5,Good effort but needs improvement in consistency.,Average
+100,45,50,45,3.5,Needs to attend more classes and study regularly.,Poor
+96,65,60,65,3.5,Good effort but needs improvement in consistency.,Average
+98,60,60,55,3.5,Good effort but needs improvement in consistency.,Average
+96,50,50,50,1.0,Needs to attend more classes and study regularly.,Poor
+100,80,90,80,7.5,"Excellent performance, keep it up!",Excellent
+100,65,65,65,3.5,Good effort but needs improvement in consistency.,Average
+98,60,65,60,3.5,Good effort but needs improvement in consistency.,Average
+100,55,55,50,3.5,Needs to attend more classes and study regularly.,Poor
+100,75,80,75,3.5,Good effort but needs improvement in consistency.,Average
+100,55,60,60,3.5,Good effort but needs improvement in consistency.,Average
+96,50,50,50,3.5,Needs to attend more classes and study regularly.,Poor
+100,65,65,65,7.5,Good effort but needs improvement in consistency.,Average
+100,30,35,0,1.0,Needs to attend more classes and study regularly.,Poor
+100,50,55,50,1.0,Needs to attend more classes and study regularly.,Poor
+90,60,70,55,3.5,Good effort but needs improvement in consistency.,Average
+96,35,35,45,3.5,Needs to attend more classes and study regularly.,Poor
+97,60,70,60,1.0,Good effort but needs improvement in consistency.,Average
+92,55,65,55,7.5,Good effort but needs improvement in consistency.,Average
+86,25,30,25,1.0,Needs to attend more classes and study regularly.,Poor
+100,90,95,95,7.5,"Excellent performance, keep it up!",Excellent
+98,40,40,50,7.5,Needs to attend more classes and study regularly.,Poor
+96,70,75,75,7.5,Good effort but needs improvement in consistency.,Average
+96,45,40,50,3.5,Needs to attend more classes and study regularly.,Poor
+100,75,75,75,3.5,Good effort but needs improvement in consistency.,Average
+83,50,50,50,3.5,Needs to attend more classes and study regularly.,Poor
+96,70,75,70,3.5,Good effort but needs improvement in consistency.,Average
+95,30,35,35,1.0,Needs to attend more classes and study regularly.,Poor
+98,55,55,50,3.5,Needs to attend more classes and study regularly.,Poor
+100,25,30,0,1.0,Needs to attend more classes and study regularly.,Poor
+86,25,30,25,1.0,Needs to attend more classes and study regularly.,Poor
+98,45,50,50,7.5,Needs to attend more classes and study regularly.,Poor
+93,25,30,30,1.0,Needs to attend more classes and study regularly.,Poor
+100,25,35,0,7.5,Needs to attend more classes and study regularly.,Poor
+100,45,35,40,3.5,Needs to attend more classes and study regularly.,Poor
+100,25,30,0,3.5,Needs to attend more classes and study regularly.,Poor
+89,45,45,45,3.5,Needs to attend more classes and study regularly.,Poor
+97,80,70,80,1.0,"Excellent performance, keep it up!",Excellent
+97,40,50,35,1.0,Needs to attend more classes and study regularly.,Poor
+100,60,55,50,1.0,Needs to attend more classes and study regularly.,Poor
+95,45,40,45,1.0,Needs to attend more classes and study regularly.,Poor

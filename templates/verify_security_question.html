@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify Security Question</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #2563eb;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4682b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2563eb;
+        }
+        .error-message {
+            color: red;
+            margin: 10px 0;
+        }
+        a {
+            color: #4682b4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🔑 Verify Security Question</h2>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <form method="POST">
+        <label for="security_answer">{{ question }}</label>
+        <input type="text" id="security_answer" name="security_answer" required>
+        <button type="submit">Submit</button>
+<br>
+        <br>
+<a href="{{ url_for('forgot_password') }}">Forgot Password</a> |
+    <a href="{{ url_for('role_selection') }}">Role Selection</a> |
+  <a href="{{ url_for('index') }}">Home</a>
+    </form>
+
+    </div>
+</body>
+</html>

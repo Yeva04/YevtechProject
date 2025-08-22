@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 20px;
+            padding: 20px;
+        }
+        h2, h3 {
+            color: #4682b4;
+        }
+        canvas {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #b0c4de;
+            color: white;
+        }
+        .error-message {
+            color: red;
+            margin: 10px 0;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            table, canvas {
+                width: 100%;
+            }
+            th, td {
+                padding: 5px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>📊 Prediction Summary</h2>
+
+    {% if error %}
+    <div class="error-message">{{ error }}</div>
+    {% endif %}
+
+    <canvas id="performanceChart" width="400" height="200"></canvas>
+
+    <!-- Store Jinja2-rendered values as a JSON string in a text/template script -->
+    <script type="text/template" id="chart-data">
+        {
+            "poorCount": {{ poor_count | default(0) }},
+            "averageCount": {{ average_count | default(0) }},
+            "excellentCount": {{ excellent_count | default(0) }}
+        }
+    </script>
+
+    <!-- Chart.js script that parses the JSON string -->
+    <script type="text/javascript">
+        // Parse the JSON string from the template script
+        const chartDataValues = JSON.parse(document.getElementById('chart-data').textContent);
+
+        const ctx = document.getElementById('performanceChart').getContext('2d');
+        const chartData = {
+            labels: ['Poor', 'Average', 'Excellent'],
+            datasets: [{
+                label: 'Prediction Count',
+                data: [
+                    chartDataValues.poorCount,
+                    chartDataValues.averageCount,
+                    chartDataValues.excellentCount
+                ],
+                backgroundColor: ['#e74c3c', '#f1c40f', '#2ecc71'],
+                borderColor: ['#c0392b', '#f39c12', '#27ae60'],
+                borderWidth: 1
+            }]
+        };
+        const chartOptions = {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Number of Students'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Performance Category'
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top'
+                }
+            }
+        };
+        const performanceChart = new Chart(ctx, {
+            type: 'bar',
+            data: chartData,
+            options: chartOptions
+        });
+    </script>
+
+    <hr>
+
+    <h3>📋 All Records</h3>
+    <table>
+        <tr>
+            <th>Student ID</th>
+            <th>Performance</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Attendance (%)</th>
+            <th>Assignment</th>
+            <th>Quiz</th>
+            <th>Exam</th>
+            <th>Study Hours</th>
+            <th>Feedback</th>
+        </tr>
+        {% for r in records %}
+        <tr>
+            <td>{{ r.student_id }}</td>
+            <td>{{ r.performance_label }}</td>
+            <td>{{ r.gender }}</td>
+            <td>{{ r.age }}</td>
+            <td>{{ r.attendance_rate }}</td>
+            <td>{{ r.assignment_score }}</td>
+            <td>{{ r.quiz_score }}</td>
+            <td>{{ r.exam_score }}</td>
+            <td>{{ r.study_hours_per_week }}</td>
+            <td>{{ r.feedback }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

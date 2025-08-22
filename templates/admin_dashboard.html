@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        h2, h3 {
+            color: #4682b4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .message {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .success { background-color: #e0ffe0; color: #2ecc71; }
+        .error { background-color: #ffe6e6; color: #e74c3c; }
+        .info { background-color: #e6f0ff; color: #4682b4; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4682b4;
+            color: white;
+        }
+        .chart-container {
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .prediction-form {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"], select, textarea {
+            width: 95%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4682b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2563eb;
+        }
+        a {
+            color: #4682b4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        canvas {
+            max-width: 100%;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #4682b4;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #2563eb;
+            text-decoration: none;
+        }
+        .response-form textarea {
+            width: 100%;
+            margin-top: 5px;
+        }
+        .pagination {
+            margin-top: 20px;
+        }
+        .pagination a {
+            margin: 0 5px;
+            padding: 8px 12px;
+            border: 1px solid #4682b4;
+            border-radius: 4px;
+        }
+        .pagination a.active {
+            background-color: #4682b4;
+            color: white;
+        }
+        .pagination a:hover:not(.active) {
+            background-color: #e6f0ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: left;"><b>🖥️ ADMIN DASHBOARD</b></h2>
+        <h3 style="text-align: left;">Welcome, {{ current_user.username }}!</h3>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="message {{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <h3 style="text-align: center; color: #000000;">Predict Student Performance</h3>
+
+        <form method="POST" class="prediction-form">
+            <div class="form-group">
+                <label for="student_id">Student ID:</label>
+                <input type="text" id="student_id" name="student_id" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age">Student Age:</label>
+                <input type="number" id="age" name="age" min="10" max="30" required>
+            </div>
+            <div class="form-group">
+                <label for="attendance_rate">Attendance Rate (%):</label>
+                <input type="number" id="attendance_rate" name="attendance_rate" min="0" max="100" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="assignment_score">Assignment Score (%):</label>
+                <input type="number" id="assignment_score" name="assignment_score" min="0" max="100" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="quiz_score">Quiz Score (%):</label>
+                <input type="number" id="quiz_score" name="quiz_score" min="0" max="100" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="exam_score">Exam Score (%):</label>
+                <input type="number" id="exam_score" name="exam_score" min="0" max="100" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="study_hours_per_week">Study Hours Per Week:</label>
+                <input type="number" id="study_hours_per_week" name="study_hours_per_week" min="0" max="168" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="access_to_internet">Access to Internet:</label>
+                <select id="access_to_internet" name="access_to_internet" required>
+                    <option value="YES">YES</option>
+                    <option value="NO">NO</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="study_support_at_home">Study Support at Home:</label>
+                <select id="study_support_at_home" name="study_support_at_home" required>
+                    <option value="YES">YES</option>
+                    <option value="NO">NO</option>
+                </select>
+            </div>
+            <center><button type="submit">Predict</button></center>
+        </form>
+    </div>
+    <br>
+
+
+    <h3>Student Performance Details</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Performance Label</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Attendance Rate</th>
+                <th>Assignment Score</th>
+                <th>Quiz Score</th>
+                <th>Exam Score</th>
+                <th>Study Hours/Week</th>
+                <th>Feedback</th>
+                <th>Internet</th>
+                <th>Support</th>
+                <th>Created At</th>
+                <th>Advice</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for prediction in predictions.items %}
+            <tr>
+                <td>{{ prediction.student_id }}</td>
+                <td>{{ prediction.performance_label }}</td>
+                <td>{{ prediction.gender }}</td>
+                <td>{{ prediction.age }}</td>
+                <td>{{ prediction.attendance_rate }}%</td>
+                <td>{{ prediction.assignment_score }}%</td>
+                <td>{{ prediction.quiz_score }}%</td>
+                <td>{{ prediction.exam_score }}%</td>
+                <td>{{ prediction.study_hours_per_week }}</td>
+                <td>{{ prediction.feedback }}</td>
+                <td>{{ prediction.access_to_internet }}</td>
+                <td>{{ prediction.study_support_at_home }}</td>
+                <td>{{ prediction.created_at.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+                <td>{{ prediction.advice }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="pagination">
+        {% if predictions.has_prev %}
+            <a href="{{ url_for('admin_dashboard', page=predictions.prev_num, sort=sort, time_filter=time_filter) }}">Previous</a>
+        {% endif %}
+        {% for num in predictions.iter_pages() %}
+            {% if num %}
+                <a href="{{ url_for('admin_dashboard', page=num, sort=sort, time_filter=time_filter) }}" {% if num == predictions.page %}class="active"{% endif %}>{{ num }}</a>
+            {% else %}
+                <span>...</span>
+            {% endif %}
+        {% endfor %}
+        {% if predictions.has_next %}
+            <a href="{{ url_for('admin_dashboard', page=predictions.next_num, sort=sort, time_filter=time_filter) }}">Next</a>
+        {% endif %}
+    </div>
+<br>
+<br>
+    <h3>Student Performance Overview</h3>
+    <div class="chart-container">
+        <canvas id="performanceChart"></canvas>
+        <input type="hidden" id="chartData" value='[{{ poor_count }}, {{ average_count }}, {{ excellent_count }}]'>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+        <script>
+            try {
+                const chartDataInput = document.getElementById('chartData').value;
+                console.log('Raw chartData:', chartDataInput);
+                const chartData = JSON.parse(chartDataInput.replace(/'/g, '"'));
+                console.log('Parsed chartData:', chartData);
+                const ctx = document.getElementById('performanceChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Poor', 'Average', 'Excellent'],
+                        datasets: [{
+                            label: 'Student Data',
+                            data: chartData,
+                            backgroundColor: ['#ff6384', '#36a2eb', '#ffcd56']
+                        }]
+                    },
+                    options: {
+                        scales: { y: { beginAtZero: true, title: { display: true, text: 'Number of Students' } } },
+                        plugins: {
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        let label = context.dataset.label || '';
+                                        if (label) label += ': ';
+                                        const value = context.parsed.y;
+                                        return label + value + ' student' + (value !== 1 ? 's' : '');
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            } catch (e) {
+                console.error('Chart error:', e);
+            }
+        </script>
+    </div>
+
+<br>
+    <h3>Student Performance Summary</h3>
+    <form method="GET" action="{{ url_for('admin_dashboard') }}">
+        <label for="sort">Sort by:</label>
+        <select name="sort" id="sort" onchange="this.form.submit()">
+            <option value="newest" {% if sort == 'newest' %}selected{% endif %}>Newest First</option>
+            <option value="oldest" {% if sort == 'oldest' %}selected{% endif %}>Oldest First</option>
+        </select>
+        <label for="time_filter">Filter by time:</label>
+        <select name="time_filter" id="time_filter" onchange="this.form.submit()">
+            <option value="all" {% if time_filter == 'all' %}selected{% endif %}>All Time</option>
+            <option value="7days" {% if time_filter == '7days' %}selected{% endif %}>Last 7 Days</option>
+        </select>
+    </form>
+    <table border="1">
+        <tr>
+            <th>Student ID</th>
+            <th>Performance Label</th>
+            <th>Created At</th>
+            <th>Advice</th>
+        </tr>
+        {% for prediction in predictions.items %}
+        <tr>
+            <td>{{ prediction.student_id }}</td>
+            <td>{{ prediction.performance_label }}</td>
+            <td>{{ prediction.created_at.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+            <td>{{ prediction.advice }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <div class="pagination">
+        {% if predictions.has_prev %}
+            <a href="{{ url_for('admin_dashboard', page=predictions.prev_num, sort=sort, time_filter=time_filter) }}">Previous</a>
+        {% endif %}
+        {% for num in predictions.iter_pages() %}
+            {% if num %}
+                <a href="{{ url_for('admin_dashboard', page=num, sort=sort, time_filter=time_filter) }}" {% if num == predictions.page %}class="active"{% endif %}>{{ num }}</a>
+            {% else %}
+                <span>...</span>
+            {% endif %}
+        {% endfor %}
+        {% if predictions.has_next %}
+            <a href="{{ url_for('admin_dashboard', page=predictions.next_num, sort=sort, time_filter=time_filter) }}">Next</a>
+        {% endif %}
+    </div>
+
+<br>
+    <h3>📩 Student Complaints</h3>
+    {% if complaints.items %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Complaint</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for complaint in complaints.items %}
+                <tr>
+                    <td>{{ complaint.full_name }}</td>
+                    <td>{{ complaint.email }}</td>
+                    <td>{{ complaint.phone_number }}</td>
+                    <td>{{ complaint.complaint_text }}</td>
+                    <td>
+                        <form method="POST" action="{{ url_for('send_complaint_response', complaint_id=complaint.id) }}" class="response-form">
+                            <textarea name="response_message" rows="3" placeholder="Type your response" required></textarea>
+                            <button type="submit">Send Response</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="pagination">
+            {% if complaints.has_prev %}
+                <a href="{{ url_for('admin_dashboard', page=complaints.prev_num, sort=sort, time_filter=time_filter) }}">Previous</a>
+            {% endif %}
+            {% for num in complaints.iter_pages() %}
+                {% if num %}
+                    <a href="{{ url_for('admin_dashboard', page=num, sort=sort, time_filter=time_filter) }}" {% if num == complaints.page %}class="active"{% endif %}>{{ num }}</a>
+                {% else %}
+                    <span>...</span>
+                {% endif %}
+            {% endfor %}
+            {% if complaints.has_next %}
+                <a href="{{ url_for('admin_dashboard', page=complaints.next_num, sort=sort, time_filter=time_filter) }}">Next</a>
+            {% endif %}
+        </div>
+    {% else %}
+        <p>No complaints submitted.</p>
+    {% endif %}
+    <br>
+    <a href="{{ url_for('logout') }}" class="btn">Logout</a>
+</body>
+</html>
