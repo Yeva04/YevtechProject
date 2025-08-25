@@ -38,3 +38,6 @@ migrations/
 mobile_unused/
 export/
 flask/
+# New entries
+*.pdf
+StudentPredictApp/
