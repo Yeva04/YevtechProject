@@ -21,11 +21,11 @@ node_modules/
 package-lock.json
 
 # Large binary files and models
-*.h5
-*.joblib
-*.save
-tensorflow-2.12.0-cp310-cp310-win_amd64.whl
-tensorflow-2.12.0-cp310-cp310-win_amd64_files/
+#*.h5
+#*.joblib
+#*.save
+#tensorflow-2.12.0-cp310-cp310-win_amd64.whl
+#tensorflow-2.12.0-cp310-cp310-win_amd64_files/
 
 # Temporary and Office files
 ~*.docx
